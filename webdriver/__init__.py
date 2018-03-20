@@ -1,1 +1,1 @@
-from webdriver.patient_driver import PatientDriver
+from webdriver.patient_driver import PatientDriver, TimeoutException

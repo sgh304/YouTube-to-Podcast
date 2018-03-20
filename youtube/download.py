@@ -1,8 +1,6 @@
 import subprocess
 
-def download_video_audio(url, path, thumbnail = True):
-	'''Downloads the audio of a video to the specified path'''
-	cmd = ['youtube-dl', '-f', 'mp4', '-o', path, '--extract-audio', url]
-	if thumbnail:
-		cmd.insert(len(cmd) - 1, '--write-thumbnail')
-	subprocess.run(cmd)
+def start_download_video_audio_process(url, path):
+    '''Returns a Popen instance of a subprocess that is downloading the audio of the video at the specified url to the specified path'''
+    cmd = ['youtube-dl', '-f', 'mp4', '-o', path, '--extract-audio', url]
+    return subprocess.Popen(cmd)
