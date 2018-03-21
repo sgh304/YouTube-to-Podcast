@@ -18,6 +18,8 @@ python launcher.py
 
 A step-by-step guide can be found by clicking the "Help" button inside the app.
 
+![Main Screenshot](https://i.imgur.com/Cd1KB8j.png)
+
 1. Retrieve the link to the desired YouTube playlist. (Note: This should be the link to the first video in the playlist, not the playlist itself! It ends with something like "&index=1&t=0s")
 2. If desired, retrieve the address for upload to a VLC smartphone app. This can be obtained by opening the app's menu and tapping the "Sharing via WiFi" button.
 3. Type/paste (right-click) each respective address into the YouTube to Podcast app.
