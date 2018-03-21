@@ -1,5 +1,5 @@
 # YouTube to Podcast
-[YouTube to Podcast Splash](https://i.imgur.com/gkgKrYT.png)
+![YouTube to Podcast Splash](https://i.imgur.com/gkgKrYT.png)
 A program written in Python that automatically downloads audio files from any public YouTube playlist to create a poorman's podcast, and even uploads those files to a smartphone's VLC app if desired.
 
 **YouTube to Podcast** is also a proof of concept for YAGUI, a Python GUI module built on top of pygame. 
