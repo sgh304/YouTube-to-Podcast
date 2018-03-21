@@ -1,17 +1,20 @@
 import pygame
 
 class Element:
+    '''An object that represents some grouped logic within an App, likely containing Drawables'''
+    # INIT
     def __init__(self):
         self.frame = 0
         self.update_functions = []
         self.cleanup_functions = []
 
-    # App
+    # APP
     def set_app(self, app):
+        '''Associates an App with this Element'''
         self.app = app
         self.on_app()
 
-    # Actions
+    # ACTIONS
     def key_down(self, key):
         pass
 
@@ -27,8 +30,9 @@ class Element:
     def mouse_move(self, pos):
         pass
 
-    # Update
+    # UPDATE
     def update(self):
+        '''Called every frame, handles the Element's logic'''
         for function in self.update_functions:
             function()
         self.frame += 1
@@ -39,8 +43,9 @@ class Element:
     def remove_update_function(self, function):
         self.update_functions.remove(function)
 
-    # Cleanup
+    # CLEANUP
     def cleanup(self):
+        '''Called when the App is closed, calls all cleanup functions'''
         for function in self.cleanup_functions:
             function()
     
@@ -50,10 +55,10 @@ class Element:
     def remove_cleanup_function(self, function):
         self.cleanup_functions.remove(function)
 
-    # Draw
+    # DRAW
     def draw(self, area):
         pass
 
-    # Overrides
+    # OVERRIDES
     def on_app(self):
         pass
