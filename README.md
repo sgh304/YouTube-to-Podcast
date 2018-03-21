@@ -1,6 +1,7 @@
 # YouTube to Podcast
 ![YouTube to Podcast Splash](https://i.imgur.com/gkgKrYT.png)
-A program written in Python that automatically downloads audio files from any public YouTube playlist to create a poorman's podcast, and even uploads those files to a smartphone's VLC app if desired.
+
+A program written in Python that automatically downloads audio files from any public YouTube playlist via youtube-dl in order to create a poorman's podcast, and can even upload those files to a smartphone's VLC app if desired.
 
 **YouTube to Podcast** is also a proof of concept for YAGUI, a Python GUI module built on top of pygame. 
 
@@ -21,3 +22,5 @@ A step-by-step guide can be found by clicking the "Help" button inside the app.
 2. If desired, retrieve the address for upload to a VLC smartphone app. This can be obtained by opening the app's menu and tapping the "Sharing via WiFi" button.
 3. Type/paste (right-click) each respective address into the YouTube to Podcast app.
 4. Press Go!
+
+*Note: This project is not affiliated with Youtube, youtube-dl, nor pygame in any official capacity.*
