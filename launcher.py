@@ -1,4 +1,5 @@
+# Running this script will launch YouTube to Podcast
+
 from gui.app import YTPApp
 
-app = YTPApp()
-app.start()
+YTPApp().start()
