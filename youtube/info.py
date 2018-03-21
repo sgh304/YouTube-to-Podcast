@@ -2,14 +2,17 @@ import re, requests
 from youtube.exceptions import PlaylistInfoException
 
 class Playlist:
+	'''An object containing information about a YouTube playlist'''
 	def __init__(self, name):
 		self.name = name
 		self.videos = []
 
 	def add_video(self, name, channel, url):
+		'''Adds a video to the playlist'''
 		self.videos.append(Video(name, channel, url))
 
 class Video:
+	'''An object containing information about a YouTube video'''
 	def __init__(self, name, channel, url):
 		self.name = name
 		self.channel = channel

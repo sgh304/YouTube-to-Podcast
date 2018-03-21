@@ -11,7 +11,6 @@ class TimeoutException(Exception):
 
 class PatientDriver():
 	'''A simple webdriver that automatically waits for elements to load before executing actions. For when the running time is not so important, but the data is'''
-
 	def __init__(self, executable_path = 'webdriver/chromedriver/chromedriver.exe', timeout = 5):
 		# User options
 		self.executable_path = executable_path

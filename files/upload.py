@@ -3,6 +3,7 @@ import files
 from webdriver import PatientDriver
 
 def upload_to_vlc(upload_url, playlist_folder):
+    '''Uploads all .m4a files from the playlist folder to the VLC app via the provided address'''
     driver = PatientDriver()
     driver.open()
     driver.go_to(upload_url)
